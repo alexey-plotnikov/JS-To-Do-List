@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0,0,0,0.1);
+  font-family: 'Titillium Web', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 10px;
+  width: 380px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 380px;
+  height:200px;
+  background-image: url('../img/bg.jpg');
+  /* background-size: 100% 200%; */
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+
+#date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #FFF;
+  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.content {
+  width: 380px;
+  height: 350px;
+  max-height:350px;
+  background-color: #FFF;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.item-list {
+  width: 380px;
+  height: 290px;
+  overflow: auto;
+}
+
+.item {
+  width: 370px;
+  height: 45px;
+  min-height: 45px;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+}
+
+.item i.co {
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+}
+
+.item i.co:hover {
+    cursor: pointer;
+}
+
+.fa-check-circle {
+    color:#6eb200;
+}
+
+.item p.text {
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:50px;
+    top:5px;
+    background-color: #FFF;
+    max-width:285px;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color : #ccc;
+}
+
+.item i.de {
+    position: absolute;
+    font-size: 25px;
+    right: 15px;
+    top: 10px;
+}
+.item i.de:hover {
+    color: #af0000;
+    cursor: pointer;
+}
+
+.add-to-do-wraper {
+  position: relative;
+  width: 360px;
+  height: 40px;
+  background-color: #FFF;
+  padding: 10px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.add-to-do-wraper i {
+    position: absolute;
+    font-size: 30px;
+    color: #4162f6;
+}
+
+.add-to-do-wraper input {
+  position: absolute;
+  left: 50px;
+  height: 35px;
+  width: 250px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.add-to-do-wraper span {
+  position: absolute;
+  right: 0px;
+  height: 35px;
+  width: 54px;
+  background: #d9d9d9;
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  padding: 7px;
+  cursor: pointer;
+  border: 2px solid;
+}
+
+.add-to-do-wraper span:hover {
+  background-color: #bbb;
+}
